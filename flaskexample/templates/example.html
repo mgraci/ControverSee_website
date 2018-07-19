@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <meta name="description" content="">
+                        <meta name="author" content="">
+                            <link rel="icon" href="../../favicon.ico">
+                                
+                                <title>Controver.See</title>
+                                
+                                <!-- Bootstrap core CSS -->
+                                <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+                                    
+                                    <!-- Custom styles for this template -->
+                                    <link href="../static/css/starter-template.css" rel="stylesheet">
+                                        
+                                        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+                                        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+                                        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+                                        
+                                        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+                                        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+                                        
+                                        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                                        <!--[if lt IE 9]>
+                                         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                                         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                                         <![endif]-->
+    </head>
+    
+    <body style="background:url('../static/images/Dog.jpg'); background-attachment:fixed; background-repeat: no-repeat;">
+        
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Controver.See</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <!--<li><a href="#about">About</a></li>-->
+                        <!--<li><a href="#contact">Contact</a></li>-->
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+        <br><br>
+        <div class="container">
+            
+            <div class="starter-template">
+                <div style="background:#FFFFFF; !important" class="jumbotron">
+                    <h2>What's the controversy?</h2>
+                    <p> Controver.See interprets any text you enter (e.g., blog post, media article), and then predicts if would be controversial, popular, or low traffic in nature on a social media platform.</p>
+                </div>
+                
+                <div class = "container">
+                    
+                    <form action="/output" method="POST">
+                        <div class="form-group">
+                            <label for="text_entry" style="color:white" >Enter text here:</label>
+                            <input type="text" id="text_entry" name='text_entry' value = "Despite specifically being to requested to address the issue, Inspector General Horowitz basically ignored lots of evidence about bias against Secretary Clinton. Indeed, he didn’t so much ignore evidence as ignore the question itself, specifically about anti-Clinton sentiment in the FBI’s New York field office and specifically whether the fear of leaks out of that office was the driver of the October 28th Comey letter which clearly damaged Clinton significantly in the final days of the campaign. It turns out that I simply missed some of the clearest evidence for that anti-Clinton bias in the report itself.
+                                
+                                Before looking at that, let’s address another point. The IG Report is in a sense of a masterpiece bureaucratic document. If the effort were to hide evidence of bias out of the New York field office it does a poor job. It simply draws no inferences from that evidence. So, for instance, much of the report is framed around examining whether pretty good evidence of hostility toward candidate Trump (though by no means only Trump) affected the actions of lead agent Peter Strzok. But whether the abundant evidence of bias and actions by those hostile to candidate Clinton had an effect is just passed over.
+                                
+                                I have not read the entire 500+ page document. My comments were based on reading significant portions of it and reading reporting about the portions I had not read myself. It turns out that meant I missed even more striking evidence of what I was talking about in last night’s post. (Let me credit the sleuthing by the lawyer who goes by “NYCSouthpaw” on Twitter for alerting me to this.) This comes from the Inspector General’s interview with former AG Loretta Lynch. She is discussing a meeting with James Comey on October 31st, 2016, three days after Comey had sent his letter to Capitol Hill.
+                                
+                                Comey’s description of this meeting focused on Lynch bucking him up, saying that the information would have leaked anyway and that that would have been worse. Her description is much more extensive and focuses on Comey’s own views of the New York field office (emphasis added) …
+                                
+                                Now, I knew that the laptop had been handled in a case out of New York. And so I said, you know, we have to talk about the New York office…and the concern that both you and I have expressed about leaks in the past. And I said, do you think that this was the right way to deal with the issue, the concern about leaks?… He didn’t have much of a response. But we were having a conversation…. And I said, you know, I’ve talked, you and I have talked about that before…. [McCabe] and I have talked about them before….
+                                
+                                And then I said, now, we’ve got to talk about the New York office in general. And he said yes. And I said we both work with them. We both know them. We both, you know, think highly of them. I said, but this has become a problem. And he said, and he said to me that it had become clear to him, he didn’t say over the course of what investigation or whatever, he said it’s clear to me that there is a cadre of senior people in New York who have a deep and visceral hatred of Secretary Clinton. And he said it is, it is deep. It’s, and he said, he said it was surprising to him or stunning to him.
+                                
+                                You know, I didn’t get the impression he was agreeing with it at all, by the way. But he was saying it did exist, and it was hard to manage because these were agents that were very, very senior, or had even had timed out and were staying on, and therefore did not really feel under pressure from headquarters or anything to that effect. And I said, you know, I’m aware of that…. I said, I wasn’t aware it was to this level and this depth that you’re talking about, but I said I’m sad to say that that does not surprise me.
+                                
+                                And he made a comment about, you know, you understand that. A lot of people don’t understand that. You, you get that issue. I said, I get that issue. I said I’m, I’m just troubled that this issue, meaning the, the New York agent issue and leaks, I am just troubled that this issue has put us where we are today with respect to this laptop.
+                                
+                                Now, in fairness, this Attorney General Lynch’s account. She was a political appointee in a Democratic administration. So it might be fair to assume she would be sympathetic to Clinton. But she was also speaking to to a DOJ investigator. She’s a career DOJ official. And critically she was describing her recollection of Comey’s words, not hers. It seems highly likely that some form of this conversation did take place: one in which both discussed the reality of deep animus against Secretary Clinton among a key group of FBI agents in the New York field office, ones who felt unbounded by supervision by FBI officials or Main Justice.
+                                
+                                Everyone involved but Comey says the decision to send the letter was highly informed by the fear the news would be leaked – leaks that pretty much by definition had to come from that New York field office. Indeed, in Comey’s account of this meeting he himself seems to implicitly grant the role of leaks in the decision …
+                                
+                                And she went over and sat down. And then…she said, “How are you doing?” I said, “I’m doing okay.” I said, “Look this is really bad, but the alternative is worse.” And then she said, “Yeah would they feel better if it had leaked on November 6th?” And I just said, “Exactly Loretta.” Because I hadn’t made the disclosure to Congress because of the leaks—the prospect of leaks, but it actually consoled me because really you’re not that important because even if you hadn’t sent a letter to Congress, which was the right thing to do, it probably would have leaked anyway that you were going for a search warrant on this stuff and she obviously saw it the same way and said, “Right, would they feel better if it had leaked on November 6th?” I think she said. And I said, “Exactly.”
+                                
+                                Notably, I see no evidence in the Report that Comey was asked if in fact he said these things or that he contradicted this account. Indeed, my understanding is that normal practice in an IG Report is that subjects of the report are allowed to review in advance the portions of the report which touch directly on them. So I think it’s highly likely Comey read this part of the report in advance and presumably doesn’t dispute it.
+                                
+                                Let’s review a range of evidence for not only anti-Clinton bias but actions which had specific and protracted effects on the investigation and news coverage of Clinton.
+                                
+                                1. We have strong evidence that there was a clique of senior agents in the New York field office with what senior FBI and DOJ officials viewed as a “visceral hatred of Secretary Clinton.” We don’t have to take Comey and Lynch’s word for it. This was actually a talking point among the GOP right in the fall of 2016. It was simply proffered as evidence for Clinton’s perfidy.
+                                
+                                2. We have strong reporting that law enforcement officials confirmed that agents in the New York field office leaked information about the laptop to one of candidate Trump’s lead campaign surrogates, Rudy Giuliani. He in turn used that information to push a restarting of the Clinton investigation. Giuliani claimed as much publicly and only changed his story when an investigation got underway.
+                                
+                                3. We know from Rep. Devin Nunes’ own account that, within two or three days of finding the emails on the laptop, what Nunes termed “good FBI agents” were leaking the information to Capitol Hill Republicans. According to Nunes, it wasn’t just him but the “House Intelligence Committee.” Presumably he means Republicans on the Committee but maybe to Democrats too.
+                                
+                                4. We know from the IG Report itself that all the top FBI officials aside from Comey believed that the fear that the laptop information would be leaked if Comey did not announce it was a key driver in the decision to send the letter. The remaining evidence suggests those leaks would have been driven by animus against Secretary Clinton.
+                                
+                                All of this adds up to strong evidence that the investigation was directly affected by people with clear anti-Clinton bias and that the critical decision to send the October 28th letter was driven at least in large part by their actions – actions which were clearly improper and may even have been illegal. As I noted in last night’s post, government employees have some latitude to bring evidence of wrongdoing to Congress as whistleblowers. But Nunes’ account suggests they more or less immediately went to Congress (in three days or less) after finding the laptop emails, far too little time to have any reasonable belief that the information was being covered up by FBI leadership. In other words, Nunes’ own account clearly identifies these not as whistleblowers exposing possible wrongdoing but evidence of political bias leading agents to take actions to damage Secretary Clinton.
+                                
+                                And yet this critical question remains all but unexplored in the Report itself. As I noted at the top, it’s a sort of bureaucratic masterpiece. At least a lot of raw data isn’t concealed. It’s simply ignored. At the end of the day it really looks like the Inspector General investigated the questions President Trump and Attorney General Sessions wanted investigated. To his credit, he looked at those questions and did not pretend to find what Trump and Sessions clearly wanted him to find. But he simply ignored the questions which were unhelpful – whether the investigations were tainted by anti-Clinton animus, and particularly whether it was behind the October 28th Comey Letter.
+                                
+                                This requires an explanation and on its face looks like a dereliction of duty.
+ " style="width: 600px; height: 50px;" />
+                        </div>
+                        
+                        <div>
+                            <button type="submit" class="btn btn-default btn-lg">Submit!</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                
+                <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+                <script src="static/js/bootstrap.min.js"></script>
+                
+            </div> <!-- /.container-->
+            
+            
+            <!-- Bootstrap core JavaScript
+             ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script src="static/js/bootstrap.min.js"></script>
+            </body>
+</html>
+
