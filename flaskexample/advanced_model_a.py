@@ -12,24 +12,16 @@ from nltk.stem import WordNetLemmatizer
 wordnet_lemmatizer = WordNetLemmatizer()
 from operator import itemgetter
 
-
-'''
-    this model does 4 things:
-    1) loads in the relevant data s
+    """
+    this model does 7 things:
+    1) loads in relevant classifier components for prediction
     2) cleans text
     3) predicts text
     4) prints out responses based on predictions
-    
-    which results in simple_model
-    
-    for model that also plots informative words, program also goes on to:
-    
-    5) load in most informative word dict
+    5) loads in most informative word dictionaries
     6) compiles most informative words
-    7) plots in
-    
-    All run through main_plot function
-    '''
+    7) runs functions 1-6 for website
+    """
 
 
 
@@ -123,7 +115,11 @@ def dict_selector(array):
 
 ## 6) creates small df of most informative features
 def get_top_features(mess, dct,  n = 10 ):
-    # Preprocessing text to work with dictionary
+    """
+    Takes in text, preprocesses it, locates words in relevant classifier dictionary, and then
+    returns the most informative words and their coefficient weights in a pandas dataframe.
+    Change n if you want a larger or smaller dataframe.
+    """
     nopunc = [char for char in mess if char not in string.punctuation]
     nopunc = ''.join(nopunc)
     no_stops = [word for word in nopunc.split() if word.lower() not in stopwords.words('english')]
@@ -156,7 +152,7 @@ def get_top_features(mess, dct,  n = 10 ):
 ## runs functions 1-6 for website
 def main(words):
     """
-    Runs entire script that is called from the views script
+    Runs entire script that is called from the views.py script for website
     """
     clean_text = classifier_cleaner(words)
     pred = predict_text(clean_text)
