@@ -25,7 +25,7 @@ from operator import itemgetter
 
 
 
-### 1a) load in classifier
+### 1a) loads in classifier
 with open('flaskexample/three_class_clf_word_analyzer.pickle', 'rb') as mod:
     clf = pickle.load(mod)
 ### 1b) loads count vectorizer ###
