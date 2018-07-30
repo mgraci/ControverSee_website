@@ -53,11 +53,13 @@ def classifier_cleaner(words):
     #remove lower cases
     lower_tokens = [toks.lower() for toks in no_stops]
     
+    #lemmatizes words
     lemma_tokens = [wordnet_lemmatizer.lemmatize(toks) for toks in lower_tokens]
 
     # Now only return alphabetical stuff ### might be optional, as numbers might be informative
     alphas = [t for t in lemma_tokens if t.isalpha()]
-    #make it one string
+    
+    #make it all one string
     clean_text = ' '.join(alphas)
     return clean_text
 
